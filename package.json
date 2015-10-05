@@ -1,0 +1,31 @@
+{
+  "name": "randomized",
+  "version": "0.0.1",
+  "description": "\"toolkit for creating randomized values in your web development\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phalanstere/Randomized.git"
+  },
+  "keywords": [
+    "color",
+    "randomized",
+    "randomization",
+    "px",
+    "percentage"
+  ],
+  "dependencies": {
+  	"color_name_converter": "0.0.1"
+  	
+  },
+  
+  "author": "Phalanstere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phalanstere/Randomized/issues"
+  },
+  "homepage": "https://github.com/Phalanstere/Randomized"
+}
