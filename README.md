@@ -14,7 +14,7 @@ There might be moments when this could produce nice aesthetic effects, since you
 #Installation
 
 ```javascript
-	npm install randomized_colors
+	npm install randomized-colors
 ```
 
 #Usage

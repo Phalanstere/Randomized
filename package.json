@@ -1,31 +1,33 @@
 {
-  "name": "randomized",
-  "version": "0.0.1",
-  "description": "\"toolkit for creating randomized values in your web development\"",
+  "name": "randomized-colors",
+  "version": "0.0.2",
+  "description": "tool for converting html colors and creating randomized variations",
   "main": "index.js",
+  "dependencies": {},
   "scripts": {
     "test": "test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Phalanstere/Randomized.git"
+    "url": "git+https://github.com/Phalanstere/RandomizedColors.git"
   },
   "keywords": [
-    "color",
-    "randomized",
+    "colors",
+    "css",
+    "hex",
+    "rgb",
+    "rgba",
     "randomization",
-    "px",
-    "percentage"
+    "random"
   ],
   "dependencies": {
   	"color_name_converter": "0.0.2"
   	
   },
-  
-  "author": "Phalanstere",
+  "author": "phalanstere <burckhardt@ludicmedia.de> (https://github.com/Phalanstere)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Phalanstere/Randomized/issues"
+    "url": "https://github.com/Phalanstere/RandomizedColors/issues"
   },
-  "homepage": "https://github.com/Phalanstere/Randomized"
+  "homepage": "https://github.com/Phalanstere/RandomizedColors#readme"
 }
