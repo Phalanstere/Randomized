@@ -2,10 +2,6 @@
 var util = require("util"); 
 var color	 = require('color_name_converter');
 
-// console.dir(csscolors);
-
-
-
 // calculates the randon color segment
 function gcol(newseg, oldseg, range) {
 	var dev = Math.floor( (Math.random() * range) - range*0.5 );
@@ -200,8 +196,6 @@ Math.clip = function(number, min, max) {
 }
 
 
-var c = randomized("lightgreen", 0.02, "array");
-console.log(util.inspect( c) );
 
 module.exports = exports = randomized;
 
