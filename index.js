@@ -1,7 +1,5 @@
 "use strict";
 var util = require("util"); 
-var csscolors = require('css-color-names');
-var hexToRgb = require('hex-to-rgb');
 var color	 = require('color_name_converter');
 
 // console.dir(csscolors);
@@ -47,7 +45,6 @@ function random_rgba(col, deviation) {
 			tg.b = gcol(tg.b, col.b, range);			
 			
 			tg.a = galpha(tg.a, col.a, deviation*2);			
-			//console.log("ALPHA " + tg.a); 
 			
 			}	
 		}		
@@ -96,6 +93,11 @@ function get_format(col, type) {
 		case "object":
 			ret = col;
 		break;
+		
+		case "array":
+			ret = [col.r, col.g, col.b];
+		break;
+		
 		}
 	return ret;		
 } 
@@ -140,9 +142,7 @@ function isNumeric(n) {
 function check_colorname(str) {
 	
 	var c = color(str, "array");
-	if (c) 
-		{
-		console.log(" COLOR " + c);	
+	if (c) {
 		return c;
 		}
 	else return null;
@@ -150,7 +150,7 @@ function check_colorname(str) {
 
 
 function isFormat(format) {
-	if (format === "rgb" || format === "rgba" || format === "hex" || format === "object") return true;
+	if (format === "rgb" || format === "rgba" || format === "array" || format === "object") return true;
 };
 
 function randomized(input, param1, format) {
@@ -158,10 +158,6 @@ function randomized(input, param1, format) {
 	rgb = check_colorname(input);
 	if (rgb) type = "colorname";
 	else type = check_type(input);
-	
-
-		
-	// console.log(type);
 	
 	switch(type) {
 		case "colorname":
@@ -204,8 +200,8 @@ Math.clip = function(number, min, max) {
 }
 
 
-// var c = randomized("lightgreen", 0.02, "rgba");
-// console.log(util.inspect( c) );
+var c = randomized("lightgreen", 0.02, "array");
+console.log(util.inspect( c) );
 
 module.exports = exports = randomized;
 
