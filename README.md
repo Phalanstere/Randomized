@@ -29,7 +29,7 @@ First you require the library:
 Invoking is straightforward: You just write: 
  
 ```javascript
-	var output = randomized("gold", 0,0.2);
+	var output = randomized("gold", 0.2);
 ```
 
 The seconed parameter stands for the randomness of the result: 1 is total randomness, 0 no randomness at all.
@@ -42,7 +42,7 @@ You would invoke it like this:
 
 
 ```javascript
-	var output = randomized("gold", 0,0.2, "rgba");
+	var output = randomized("gold", 0.2, "rgba");
 ```
 
 Since the function is overloaded it supports a variety of input formats.
